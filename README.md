@@ -1,7 +1,7 @@
-# TPO-Front-Integrador-HTML-CSS-Javascript
+# TPO Front Integrador HTML CSS Javascript
 
 ## El TPO deberá cumplir con los siguientes requisitos:
--  Poseer al menos 3 páginas html, siendo su temática libre.
+- Poseer al menos 3 páginas html, siendo su temática libre.
 - Utilizar etiquetas semánticas para estructurar el sitio de forma correcta.
 - Contener un formulario de contacto con validación realizada mediante Javascript.
 - Utilizar iframes, íconos de FontAwesome, y fuentes locales o bien de Google Fonts.
