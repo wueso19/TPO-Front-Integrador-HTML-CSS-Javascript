@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +14,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>EleaStore | Contacto</title>
   </head>
@@ -41,7 +42,102 @@
     </header>
     <main>
       <!-- Contaco -->
-      FORMULARIO DE CONTACTO AQUI!!
+      <form
+        method="POST"
+        action=""
+        class="needs-validation"
+        novalidate
+      >
+        <div class="form-row mt-5">
+          <div class="col-md-4 mb-3">
+            <label for="validarNombre">Nombre:<span class="red">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="validarNombre"
+              name="validarNombre"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validarApellidos"
+              >Apellidos:<span class="red">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validarApellidos"
+              name="validarApellidos"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validarEmail">Email:<span class="red">*</span></label>
+            <input
+              type="email"
+              class="form-control"
+              id="validarEmail"
+              name="validarEmail"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validarTelefono">Teléfono:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="validarTelefono"
+              name="validarTelefono"
+              max="999999999"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validarAsunto">Asunto:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validarAsunto"
+              name="validarAsunto"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="validationMensaje"
+            >Mensaje:<span class="red">*</span></label
+          >
+          <textarea
+            class="form-control"
+            id="validationMensaje"
+            name="validationMensaje"
+            rows="3"
+            min="25"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group mb-10">
+          <button class="btn btn-primary" type="submit" name="submit">
+            Enviar
+          </button>
+          <button class="btn btn-success" type="reset" name="reset">
+            Limpiar
+          </button>
+        </div>
+      </form>
     </main>
     <!-- Footer -->
     <footer>
@@ -51,8 +147,8 @@
             <h3>Descarga nuestra aplicación.</h3>
             <p>Descargar la aplicación para teléfonos móviles Android e IOS.</p>
             <div class="app-logo">
-              <img src="images/play-store.png" alt="play-store">
-              <img src="images/app-store.png" alt="app-store">
+              <img src="images/play-store.png" alt="play-store" />
+              <img src="images/app-store.png" alt="app-store" />
             </div>
           </div>
           <div class="footer-col-2">
@@ -81,22 +177,24 @@
             </ul>
           </div>
         </div>
-        <hr>
+        <hr />
         <p class="copyright">Copyright 2021 - EleaStore</p>
       </div>
     </footer>
     <!-- js para el menu desplegable -->
     <script>
-      let MenuItems = document.getElementById("MenuItems")
-      MenuItems.style.maxHeight = "0px"
+      let MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
 
       function menutoggle() {
         if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px"          
-        }else{
-          MenuItems.style.maxHeight = "0px"
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
         }
       }
     </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>
