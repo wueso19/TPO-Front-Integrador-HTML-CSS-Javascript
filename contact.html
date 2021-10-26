@@ -42,102 +42,114 @@
     </header>
     <main>
       <!-- Contaco -->
-      <form
-        method="POST"
-        action=""
-        class="needs-validation"
-        novalidate
-      >
-        <div class="form-row mt-5">
-          <div class="col-md-4 mb-3">
-            <label for="validarNombre">Nombre:<span class="red">*</span></label>
-            <input
-              type="text"
-              class="form-control"
-              id="validarNombre"
-              name="validarNombre"
-              required
-            />
+      <div class="container-fluid cont-contact">
+        <div class="row contact">
+          <div class="col-sm-12 col-md-6 col-lg-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8235406493676!2d-68.36496817078827!3d-34.62200589515881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM3JzE5LjIiUyA2OMKwMjEnNTEuOSJX!5e0!3m2!1ses-419!2sar!4v1635273862407!5m2!1ses-419!2sar" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validarApellidos"
-              >Apellidos:<span class="red">*</span></label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="validarApellidos"
-              name="validarApellidos"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validarEmail">Email:<span class="red">*</span></label>
-            <input
-              type="email"
-              class="form-control"
-              id="validarEmail"
-              name="validarEmail"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validarTelefono">Teléfono:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="validarTelefono"
-              name="validarTelefono"
-              max="999999999"
-            />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validarAsunto">Asunto:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validarAsunto"
-              name="validarAsunto"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="validationMensaje"
-            >Mensaje:<span class="red">*</span></label
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h3 class="mt-5">Contacto</h3>
+            <form
+            method="POST"
+            action=""
+            class="needs-validation"
+            novalidate
           >
-          <textarea
-            class="form-control"
-            id="validationMensaje"
-            name="validationMensaje"
-            rows="3"
-            min="25"
-            required
-          ></textarea>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validarNombre"
+                  name="validarNombre"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="validarApellidos"
+                  >Apellidos:<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validarApellidos"
+                  name="validarApellidos"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="validarEmail">Email:<span class="red">*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validarEmail"
+                  name="validarEmail"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="validarTelefono">Teléfono:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validarTelefono"
+                  name="validarTelefono"
+                  max="999999999"
+                />
+              </div>
+            </div>
+    
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="validarAsunto">Asunto:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validarAsunto"
+                  name="validarAsunto"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="validationMensaje"
+                >Mensaje:<span class="red">*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="validationMensaje"
+                name="validationMensaje"
+                rows="3"
+                min="25"
+                required
+              ></textarea>
+            </div>
+    
+            <div class="form-group mb-10">
+              <button class="btn btn-primary" type="submit" name="submit">
+                Enviar
+              </button>
+              <button class="btn btn-success" type="reset" name="reset">
+                Limpiar
+              </button>
+            </div>
+            <p>* campos obligatorios</p>
+            </form>
+          </div>
         </div>
-
-        <div class="form-group mb-10">
-          <button class="btn btn-primary" type="submit" name="submit">
-            Enviar
-          </button>
-          <button class="btn btn-success" type="reset" name="reset">
-            Limpiar
-          </button>
-        </div>
-      </form>
+      </div>
+      
     </main>
     <!-- Footer -->
     <footer>
@@ -181,20 +193,8 @@
         <p class="copyright">Copyright 2021 - EleaStore</p>
       </div>
     </footer>
-    <!-- js para el menu desplegable -->
-    <script>
-      let MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -242,6 +242,19 @@ footer hr{
 .copyright{
     text-align: center;
 }
+/* -------Contact------- */
+.cont-contact{
+    background: #ff523b;
+    justify-content: center;
+    padding: 10px;
+}
+.contact{
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    width: 70%;
+    box-shadow: 11px 10px 20px -6px rgb(24 24 24);
+    background: #fff;
+}
 /* -------Responsive------- */
 .menu-icon{
     width: 28px;
@@ -280,5 +293,14 @@ footer hr{
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
+    }
+    /* contacto */
+    .cont-contact{
+        padding: 0;
+    }
+    .contact{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }
