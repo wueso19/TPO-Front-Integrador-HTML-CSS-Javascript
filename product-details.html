@@ -16,7 +16,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>EleaStore | Todos los Productos</title>
+    <title>EleaStore | Detalles del Producto</title>
   </head>
   <body>
     <div class="container">
@@ -30,7 +30,7 @@
             <li><a href="./products.html">Productos</a></li>
             <li><a href="./about-us.html">Nosotros</a></li>
             <li><a href="./contact.html">Contacto</a></li>
-            <li><a href="./login.html">Acceder</a></li>
+            <li><a href="./account.html">Acceder</a></li>
           </ul>
         </nav>
         <a href="cart.html"><img src="images/cart.png" alt="icon" width="30px" height="30px" /></a>
@@ -181,6 +181,24 @@
         <p class="copyright">Copyright 2021 - EleaStore</p>
       </div>
     </footer>
+    <script>
+      // galeria de imagenes para 1 producto
+      let productImg = document.getElementById("productImg")
+      let smallImg = document.getElementsByClassName("small-img")
+
+      smallImg[0].onclick = function(){
+        productImg.src = smallImg[0].src
+      }
+      smallImg[1].onclick = function(){
+        productImg.src = smallImg[1].src
+      }
+      smallImg[2].onclick = function(){
+        productImg.src = smallImg[2].src
+      }
+      smallImg[3].onclick = function(){
+        productImg.src = smallImg[3].src
+      }
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

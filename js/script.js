@@ -15,19 +15,20 @@ function detail() {
   window.location.href = ("product-details.html")
 }
 
-// galeria de imagenes para 1 producto
-let productImg = document.getElementById("productImg")
-let smallImg = document.getElementsByClassName("small-img")
+// toggle form
+const loginForm = document.getElementById("loginForm")
+const registerForm = document.getElementById("registerForm")
+const indicator = document.getElementById("indicator")
 
-smallImg[0].onclick = function(){
-  productImg.src = smallImg[0].src
+function register() {
+  registerForm.style.transform = "translateX(0px)"
+  loginForm.style.transform = "translateX(0px)"
+  indicator.style.transform = "translateX(100px)"
+
 }
-smallImg[1].onclick = function(){
-  productImg.src = smallImg[1].src
-}
-smallImg[2].onclick = function(){
-  productImg.src = smallImg[2].src
-}
-smallImg[3].onclick = function(){
-  productImg.src = smallImg[3].src
+function login() {
+  registerForm.style.transform = "translateX(300px)"
+  loginForm.style.transform = "translateX(300px)"
+  indicator.style.transform = "translateX(0px)"
+
 }

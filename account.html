@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>EleaStore | Cuenta</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="EleaStore" width="170px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./products.html">Productos</a></li>
+            <li><a href="./abouts.html">Nosotros</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./account.html">Acceder</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" alt="icon" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <main>
+      <!-- acceder o registrar -->
+      <div class="account-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/image1.png" width="100%" />
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                <div class="form-btn">
+                  <span onclick="login()">Entrar</span>
+                  <span onclick="register()">Registrar</span>
+                  <hr id="indicator" />
+                </div>
+                <form action="" id="loginForm">
+                  <input type="text" placeholder="Usuario" />
+                  <input type="password" placeholder="Contraseña" />
+                  <button type="submit" class="btn">Entrar</button>
+                  <a href="">Recuperar Contraseña</a>
+                </form>
+                <form action="" id="registerForm">
+                  <input type="text" placeholder="Usuario" />
+                  <input type="email" placeholder="Correo" />
+                  <input type="password" placeholder="Contraseña" />
+                  <button type="submit" class="btn">Registrar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Descarga nuestra aplicación.</h3>
+            <p>Descargar la aplicación para teléfonos móviles Android e IOS.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="play-store" />
+              <img src="images/app-store.png" alt="app-store" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="white" />
+            <p>
+              Nuestro propósito es hacer que el placer y los beneficios de los
+              deportes sean accesibles para muchos.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Enlaces útiles</h3>
+            <ul>
+              <li>Cupones</li>
+              <li>Blog</li>
+              <li>Política de Devoluciones</li>
+              <li>Contacto</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Síguenos</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2021 - EleaStore</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
