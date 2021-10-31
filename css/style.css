@@ -174,7 +174,7 @@ p{
 .testimonial .col-3 h3{
     font-weight: 600;
     color: #555;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 /* -------Marcas------- */
 .brands{
@@ -247,12 +247,12 @@ footer hr{
     background: #ff523b;
     justify-content: center;
     padding: 10px;
+    background: radial-gradient(#fff,#ffd6d6);
 }
 .contact{
-    border-radius: 10px;
     margin: 0 auto 0 auto;
     width: 70%;
-    box-shadow: 11px 10px 20px -6px rgb(24 24 24);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     background: #fff;
 }
 /* pagina de productos */
@@ -505,5 +505,12 @@ form a{
     }
     .cart-info p{
         display: none;
+    }
+}
+
+/* -------Media query 1200px ------- */
+@media (min-width: 1200px){
+    h3{
+        font-size: 16px;
     }
 }

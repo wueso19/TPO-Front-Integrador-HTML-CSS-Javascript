@@ -30,5 +30,9 @@ function login() {
   registerForm.style.transform = "translateX(300px)"
   loginForm.style.transform = "translateX(300px)"
   indicator.style.transform = "translateX(0px)"
+}
 
+// limpiar form contacto
+function clear() {
+  document.getElementById("contacto").reset()
 }
