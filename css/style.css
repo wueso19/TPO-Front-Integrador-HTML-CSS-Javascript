@@ -478,6 +478,9 @@ form a{
 }
 /* -------Media query para tamaño de pantalla inferior a 600 ------- */
 @media only screen and (max-width: 600px){
+    h3{
+        font-size: 16px;
+    }
     .row{
         text-align: center;
     }
